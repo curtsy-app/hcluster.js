@@ -207,9 +207,9 @@ var hcluster = function() {
       clustersGivenK,
       treeRoot,
       posKey = 'position',
-      distanceName = 'angular',
-      distanceFn = distance.angular,
-      linkage = 'avg',
+      distanceName = 'cosine',
+      distanceFn = distance.cosineSimilarity, // modified
+      linkage = 'complete', // modified
       verbose = false;
 
   //
